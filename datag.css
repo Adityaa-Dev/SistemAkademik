@@ -1,0 +1,40 @@
+/* Tabel Data Guru */
+
+.tabel-data {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  background-color: #fff;
+  border: 1px solid #cbd5e1;
+}
+
+.tabel-data th,
+.tabel-data td {
+  padding: 12px 16px;
+  border: 1px solid #cbd5e1;
+  text-align: center;
+  font-size: 14px;
+}
+
+.tabel-data thead {
+  background-color: #e2e8f0;
+  color: #1e293b;
+}
+
+.tabel-data tbody tr:hover {
+  background-color: #f8fafc;
+}
+
+.tabel-data button {
+  padding: 6px 12px;
+  margin: 2px;
+  background-color: #1e40af;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.tabel-data button:hover {
+  background-color: #2563eb;
+}

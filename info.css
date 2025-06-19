@@ -1,0 +1,35 @@
+/* Pengumuman Form */
+
+.form-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-info label {
+  font-weight: bold;
+  color: #1e293b;
+}
+
+.form-info input,
+.form-info textarea {
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+  font-size: 15px;
+}
+
+.form-info button {
+  background-color: #15803d;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.form-info button:hover {
+  background-color: #166534;
+}

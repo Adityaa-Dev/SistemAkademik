@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Input Nilai</title>
+  <link rel="stylesheet" href="siswa.css" />
+  <link rel="stylesheet" href="input.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <img src="../asset/logoht.png" alt="Logo Sekolah" />
+        <strong>Admin Panel</strong>
+      </div>
+      <ul>
+        <li><a href="guru.html">Dashboard</a></li>
+        <li><a href="input.html" class="active">Input Nilai</a></li>
+        <li><a href="jadwalg.html">Jadwal Mengajar</a></li>
+        <li><a href="index.html">Logout</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="content">
+    <div class="header">
+      <h2>Input Nilai Siswa</h2>
+      <p>Masukkan nilai siswa berdasarkan data kelas dan mapel.</p></br>
+        <p>Maaf bu telat kumpulin, semangat ya ibu disana bu :D</p>
+    </div>
+
+    <div class="kotak">
+      <form class="form-nilai">
+        <label>Nama Siswa</label>
+        <input type="text" placeholder="Masukkan nama siswa" required />
+
+        <label>Kelas</label>
+        <input type="text" placeholder="Contoh: XI RPL" required />
+
+        <label>Mata Pelajaran</label>
+        <input type="text" placeholder="Masukkan mata pelajaran" required />
+
+        <label>Nilai</label>
+        <input type="number" placeholder="Contoh: 85" required />
+
+        <button type="submit">Simpan Nilai</button>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>

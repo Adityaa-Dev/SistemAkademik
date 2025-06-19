@@ -1,0 +1,17 @@
+/* Guru Dashboard Styles */
+
+.button-link {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 16px;
+  background-color: #0c4a6e;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.button-link:hover {
+  background-color: #0369a1;
+}

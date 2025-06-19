@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login - SMK Hang Tuah</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="left-side">
+      <div class="content-box">
+        <img src="../asset/logoht.png" class="logo" alt="Logo Hang Tuah" />
+        <h2>WELCOME</h2>
+        <p>Hi KawanHT!</p>
+
+        <form id="loginForm">
+          <input type="text" id="username" placeholder="Isi nama kamu" required />
+          <input type="password" id="password" placeholder="Isi password apa aja" required />
+          <select id="role" required>
+            <option value="">-- Pilih Role --</option>
+            <option value="siswa">Siswa</option>
+            <option value="guru">Guru</option>
+            <option value="admin">Admin</option>
+          </select>
+          <button type="submit">Login</button>
+        </form>
+
+        <div id="error-message" style="color: red; margin-top: 10px;"></div>
+
+        <div class="media">
+          <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube" />
+          <img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" alt="Facebook" />
+          <img src="https://cdn-icons-png.flaticon.com/512/1384/1384065.png" alt="Instagram" />
+          <img src="https://cdn-icons-png.flaticon.com/512/1384/1384062.png" alt="TikTok" />
+        </div>
+      </div>
+    </div>
+
+    <div class="right-side">
+      <img src="../asset/lap.jpg" alt="Upacara" />
+      <div class="overlay"></div>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('loginForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      const role = document.getElementById('role').value;
+
+      if (role === "siswa") {
+        window.location.href = "siswa.html";
+      } else if (role === "guru") {
+        window.location.href = "guru.html";
+      } else if (role === "admin") {
+        window.location.href = "admin.html";
+      } else {
+        document.getElementById('error-message').textContent = "Pilih role terlebih dahulu.";
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Guru</title>
+  <link rel="stylesheet" href="siswa.css">
+  <link rel="stylesheet" href="datag.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <img src="../asset/logoht.png" alt="Logo Sekolah">
+        <strong>Admin Panel</strong>
+      </div>
+      <ul>
+        <li><a href="admin.html">Dashboard</a></li>
+        <li><a href="info.html">Pengumuman</a></li>
+        <li><a href="datag.html" class="active">Data Guru</a></li>
+        <li><a href="datas.html">Data Siswa</a></li>
+        <li><a href="index.html">Logout</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="content">
+    <div class="header">
+      <h2>Manajemen Data Guru</h2>
+      <p>Lihat atau ubah informasi guru.</p>
+    </div>
+
+    <div class="kotak">
+      <table class="tabel-data">
+        <thead>
+          <tr>
+            <th>Nama</th>
+            <th>NIP</th>
+            <th>Mata Pelajaran</th>
+            <th>Kontak</th>
+            <th>Aksi</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Deni Saputra</td>
+            <td>19800101</td>
+            <td>RPL</td>
+            <td>08123456789</td>
+            <td><button>Edit</button> <button>Hapus</button></td>
+          </tr>
+          <!-- Data lainnya -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+</html>

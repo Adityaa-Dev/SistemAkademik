@@ -1,0 +1,147 @@
+/* ==================================================
+   Reset & Base Styles
+   ================================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #e2e8f0;
+  color: #1e293b;
+  line-height: 1.6;
+  padding-bottom: 2rem;
+}
+
+/* ==================================================
+   Navbar
+   ================================================== */
+.navbar {
+  background-color: #1e293b;
+  padding: 1rem 2rem;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.nav-container .logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.nav-container .logo img {
+  width: 40px;
+  height: auto;
+}
+
+.nav-container .logo strong {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.nav-container ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.nav-container ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-container ul li a:hover,
+.nav-container ul li a.active {
+  color: #38bdf8;
+  background-color: rgba(56, 189, 248, 0.1);
+  border-bottom: 2px solid #38bdf8;
+}
+
+@media (max-width: 768px) {
+  .nav-container ul {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 1rem;
+  }
+}
+
+/* ==================================================
+   Page Content & Header
+   ================================================== */
+.content {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+.header {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  margin-bottom: 30px;
+}
+
+/* ==================================================
+   Boxes (Kotak)
+   ================================================== */
+.kotak {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  flex: 1 1 100%;
+}
+
+.kotak h2 {
+  color: #0f172a;
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+}
+
+.kotak p,
+.kotak li {
+  font-size: 15px;
+  margin: 6px 0;
+}
+
+.kotak ul {
+  list-style: disc;
+  padding-left: 1.2rem;
+}
+
+.kotak-dua {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.kotak-dua .kotak {
+  width: calc(50% - 0.75rem);
+}
+
+@media (max-width: 768px) {
+  .kotak-dua {
+    flex-direction: column;
+  }
+
+  .kotak-dua .kotak {
+    width: 100%;
+  }
+}

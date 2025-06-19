@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kelola Pengumuman</title>
+  <link rel="stylesheet" href="siswa.css">
+  <link rel="stylesheet" href="info.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <img src="../asset/logoht.png" alt="Logo Sekolah">
+        <strong>Admin Panel</strong>
+      </div>
+      <ul>
+        <li><a href="admin.html">Dashboard</a></li>
+        <li><a href="info.html" class="active">Pengumuman</a></li>
+        <li><a href="datag.html">Data Guru</a></li>
+        <li><a href="datas.html">Data Siswa</a></li>
+        <li><a href="index.html">Logout</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="content">
+    <div class="header">
+      <h2>Kelola Pengumuman</h2>
+      <p>Tambahkan atau perbarui informasi penting untuk siswa dan guru.</p>
+    </div>
+
+    <div class="kotak">
+      <form class="form-info">
+        <label>Judul Pengumuman</label>
+        <input type="text" placeholder="Contoh: Ujian Akhir Semester" required>
+
+        <label>Isi Pengumuman</label>
+        <textarea rows="5" placeholder="Tulis isi pengumuman di sini..." required></textarea>
+
+        <button type="submit">Simpan</button>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
